@@ -1,0 +1,177 @@
+[
+  {
+    "id": "valid-purchase---sauce-demo",
+    "uri": "features/specs/sauce_demo.feature",
+    "keyword": "Feature",
+    "name": "Valid Purchase - Sauce Demo",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "valid-purchase---sauce-demo;make-a-valid-purchase",
+        "keyword": "Scenario",
+        "name": "Make a valid Purchase",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that navigating to the Sauce Demo site",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_sauce_demo_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 775222200
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "that you login with the user \"standard_user\"",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/login_sauce_demo_step.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 413861800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "add a product to the cart",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/home_sauce_demo_step.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Unable to find css \"#add-to-cart-sauce-labs-backpack\" (Capybara::ElementNotFound)\n./features/page/home_sauce_demo_page.rb:7:in `add_product_cart'\n./features/step_definitions/home_sauce_demo_step.rb:2:in `\"add a product to the cart\"'\nfeatures/specs/sauce_demo.feature:6:in `add a product to the cart'",
+              "duration": 10011623900
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "navigate to the shopping cart",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/home_sauce_demo_step.rb:5"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "check that the product has been successfully added",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/cart_sauce_demo_step.rb:1"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "navigate to checkout",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/cart_sauce_demo_step.rb:5"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "fill in your details and continue",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/checkout_sauce_demo_step.rb:1"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "validate the value of the product on the Checkout screen, Overview",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/checkout_sauce_demo_step.rb:5"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "validate that the total amount corresponds to the description on the page and complete the purchase",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/checkout_sauce_demo_step.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "complete the purchase and confirm that the purchase was successful",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/checkout_sauce_demo_step.rb:13"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17200
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:18"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `embed' for #<Object+PagesObjects+Capybara::RSpecMatchers+Capybara::DSLRSpecProxyInstaller+Capybara::DSL+RSpec::Matchers+Cucumber::Glue::ProtoWorld+#<Module:0x000002747c0ecbb0>+PP::ObjectMixin+JSON::Ext::Generator::GeneratorMethods::Object+Kernel+:0xd750> (NoMethodError)\n./features/support/hooks.rb:22:in `After'",
+              "duration": 158838400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 356254900
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
